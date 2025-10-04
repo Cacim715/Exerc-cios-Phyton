@@ -1,0 +1,34 @@
+/* Guias visuais para checagem do layout */
+
+/* Limite da página */
+.page-wrapper {
+  position: relative;
+  background-color: rgba(200, 200, 255, 0.1); /* leve azul */
+}
+
+/* Painel explanation - 60% */
+.explanation {
+  background-color: rgba(255, 200, 200, 0.3); /* leve vermelho */
+  border-right: 2px dashed #ff0000; /* linha tracejada direita para guia */
+}
+
+/* Espaço restante - 35% */
+.page-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 60%; /* começa onde termina o painel explanation */
+  width: 35%;
+  height: 100%;
+  border-left: 2px dashed #00aa00; /* linha tracejada para guia do menu */
+  background-color: rgba(200, 255, 200, 0.2); /* leve verde para visualizar o espaço */
+  pointer-events: none; /* não interfere na interação */
+}
+
+/* Menu de designs */
+.design-menu {
+  background-color: rgba(0, 255, 255, 0.3); /* leve ciano para diferenciar */
+  padding-left: 2%;
+  padding-right: 2%;
+  box-sizing: border-box;
+}
