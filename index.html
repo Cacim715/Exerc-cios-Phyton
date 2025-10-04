@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae - Acacio Magalhães</title>
+  <style>
+    :root {
+      --cor-principal: #2C3E50;
+      --cor-secundaria: #34495E;
+      --cor-destaque: #1ABC9C;
+      --f-titulo: 'Poppins', sans-serif;
+      --f-texto: 'Roboto', sans-serif;
+    }
+    body {
+      margin: 0;
+      font-family: var(--f-texto);
+      background-color: #f4f6f7;
+      color: #2c3e50;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: var(--cor-principal);
+      display: flex;
+      justify-content: center;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin: 0 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 15px;
+      display: block;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      background-color: var(--cor-destaque);
+      border-radius: 5px;
+    }
+    section {
+      padding: 80px 20px 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1, h2, h3 {
+      font-family: var(--f-titulo);
+      color: var(--cor-secundaria);
+    }
+    h1 {
+      text-align: center;
+      color: var(--cor-principal);
+    }
+    .apresentacao {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .apresentacao img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid var(--cor-destaque);
+      margin-top: 10px;
+      object-fit: cover;
+    }
+    .contato {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+    .educacao-item, .certificacao, .experiencia {
+      background: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+    .educacao-item { border-left: 5px solid var(--cor-destaque); }
+    .certificacao { border-left: 5px solid var(--cor-principal); }
+    .certificacao strong { color: var(--cor-destaque); }
+    .experiencia { border-left: 5px solid var(--cor-secundaria); }
+    ul.habilidades {
+      list-style: square;
+      padding-left: 20px;
+    }
+    footer {
+      background-color: var(--cor-principal);
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    footer ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    footer ul li a {
+      color: var(--cor-destaque);
+      text-decoration: none;
+    }
+    footer ul li a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav ul li {
+        margin: 5px 0;
+      }
+      .apresentacao {
+        padding-top: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#apresentacao">Apresentação</a></li>
+      <li><a href="#educacao">Educação</a></li>
+      <li><a href="#certificacoes">Certificações</a></li>
+      <li><a href="#experiencia">Experiência</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section id="apresentacao" class="apresentacao">
+    <h1>Acacio Magalhães Nogueira Lima</h1>
+    <img src="data:image/jpeg;base64,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" alt="Foto de Acacio Magalhães">
+    <p>Sou estudante de Engenharia de Software (6º período) com interesse em desenvolvimento web e mobile. Busco oportunidades para aplicar e expandir meus conhecimentos em tecnologia, programação e design de interfaces.</p>
+    <div class="contato">
+      <p><strong>E-mail:</strong> acaciomagalhaes4@gmail.com</p>
+      <p><strong>Cidade:</strong> Itabira - MG</p>
+    </div>
+  </section>
+
+  <section id="educacao">
+    <h2>Educação</h2>
+    <div class="educacao-item">
+      <h3>Engenharia de Software</h3>
+      <p>Universidade de Itabira</p>
+      <p>Previsão de conclusão: 2026</p>
+    </div>
+  </section>
+
+  <section id="certificacoes">
+    <h2>Certificações</h2>
+    <div class="certificacao">
+      <strong>Curso de HTML e CSS</strong>
+      <p>Carga Horária: 40h | Ano: 2024</p>
+    </div>
+    <div class="certificacao">
+      <strong>Curso de JavaScript Básico</strong>
+      <p>Carga Horária: 30h | Ano: 2024</p>
+    </div>
+  </section>
+
+  <section id="experiencia">
+    <h2>Experiência Profissional</h2>
+    <div class="experiencia">
+      <h3>Atendente - Auto Posto Caue Ltda</h3>
+      <p>Período: 2023 - Atual</p>
+      <p>Atendimento ao público, controle de caixa e suporte nas operações diárias do posto.</p>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <h2>Habilidades Técnicas</h2>
+    <ul class="habilidades">
+      <li>HTML5 / CSS3</li>
+      <li>JavaScript</li>
+      <li>React Native</li>
+      <li>Python</li>
+      <li>Git e GitHub</li>
+      <li>Design Responsivo</li>
+    </ul>
+  </section>
+
+  <footer id="contato">
+    <ul>
+      <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+      <li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+    </ul>
+    <p>&copy; 2025 Acacio Magalhães Nogueira Lima. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
