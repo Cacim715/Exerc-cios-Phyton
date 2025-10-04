@@ -1,0 +1,52 @@
+/* 1. Aspectos gerais */
+
+/* a. Define tamanho fixo para a página inteira */
+body {
+    width: 900px; /* ajuste conforme desejar */
+    margin: 0 auto; /* centraliza a página */
+    font-family: Arial, Helvetica, sans-serif; /* b. Fonte sans-serif */
+}
+
+/* c. Indenta parágrafos em 1em */
+p {
+    text-indent: 1em;
+}
+
+/* 2. Títulos */
+
+/* Alinha todos os títulos para o centro */
+h1, h2, h3 {
+    text-align: center; /* ou 'right' se preferir alinhamento à direita */
+}
+
+/* Define tamanho específico para cada título */
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+/* 3. Seções de resumo e principal */
+
+/* a. Alinhamento da seção de resumo */
+.summary { /* supondo que a seção de resumo tenha a classe 'summary' */
+    text-align: right; /* ou 'center' */
+}
+
+/* b. Espaçamento entre linhas da seção principal */
+.main { /* supondo que a seção principal tenha a classe 'main' */
+    line-height: 1.5;
+}
+
+/* 4. Abreviaturas */
+
+/* Aplica small-caps a todas as abreviaturas */
+abbr {
+    font-variant: small-caps;
+}
