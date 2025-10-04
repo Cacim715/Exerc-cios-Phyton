@@ -1,0 +1,12 @@
+# CSS Zen Garden - Estilização Completa
+
+## Descrição
+Este projeto é uma prática de **CSS** aplicada para estilização textual e visual, baseado no conceito do **CSS Zen Garden**. O objetivo é demonstrar:
+
+- Personalização de títulos, parágrafos e seções
+- Estilização de listas, links e abreviaturas
+- Uso de cores, sombras e destaques visuais
+- Boa hierarquia visual e tipografia agradável
+
+## Estrutura do Projeto
+
